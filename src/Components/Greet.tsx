@@ -1,10 +1,14 @@
 type greetProps={
-    name:string
+    name:string,
+    msgCount:number,
+    isLoggedIn:boolean
 }
 export const Greet=(props:greetProps)=>{
     return (
         <div>
-            <h1>Hey there, I'm {props.name} currently learning TypeScript!</h1>
+            {
+                props.isLoggedIn? <h1>Hello {props.name} you have {props.msgCount} unread Messages</h1>:<h1>Hello User</h1>
+            }
         </div>
     )
 }
