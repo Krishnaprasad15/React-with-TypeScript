@@ -1,8 +1,10 @@
 // import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import Heading from './Components/Heading';
-import Oscar from './Components/Oscar';
+// import Button from './Components/Button';
+import Input from './Components/Input';
+// import Heading from './Components/Heading';
+// import Oscar from './Components/Oscar';
 // import ArrProp from './Components/ArrProp';?\
 // import Status from './Components/Status';
 // import { Person } from './Components/Person';
@@ -37,7 +39,9 @@ function App() {
       {/* <ArrProp names={PersonArr}/> */}
       {/* <Status status='error'/> */}
       {/* <Heading>Heading prop</Heading> */}
-      <Oscar><Heading>Oscar goes to ###</Heading></Oscar>
+      {/* <Oscar><Heading>Oscar goes to Leanardo Decaprio</Heading></Oscar> */}
+      {/* <Button Handler={(event,id)=>{console.log('Button clicked',event,id)}}/> */}
+      <Input value='' ChangeHandler={(event)=>console.log(event.target.value)}/>
     </div>
   );
 }
