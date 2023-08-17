@@ -1,10 +1,5 @@
 //passing objects as a prop
-type PersonProps={
-    name:{
-        first:string
-        last:string
-    }
-}
+import {PersonProps} from './Person.types'
 export const Person = (props:PersonProps) => {
   return (
     <div>
